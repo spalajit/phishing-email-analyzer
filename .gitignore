@@ -1,0 +1,179 @@
+# =========================================
+# Email Analyzer - Git Ignore File
+# CRITICAL: Prevents sensitive data from being committed
+# =========================================
+
+# ===========================
+# SENSITIVE FILES - NEVER COMMIT
+# ===========================
+
+# Configuration files with credentials
+config.yaml
+config.yml
+*.env
+.env
+.env.local
+.env.production
+
+# Backup of config with real credentials
+config.yaml.example
+config.yaml.backup
+
+# API credentials and tokens
+APIs.txt
+api_keys.txt
+secrets.txt
+credentials.txt
+
+# ===========================
+# DATA DIRECTORIES - NEVER COMMIT
+# ===========================
+
+# Email samples that might contain sensitive data
+samples/
+!samples/.gitkeep
+!samples/sample_phishing.eml
+
+# Generated reports (may contain sensitive information)
+reports/
+!reports/.gitkeep
+
+# Log files (may contain credentials or sensitive data)
+logs/
+!logs/.gitkeep
+
+# Temporary data
+temp/
+tmp/
+
+# ===========================
+# PYTHON
+# ===========================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# ===========================
+# IDEs and Editors
+# ===========================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ===========================
+# OPERATING SYSTEM
+# ===========================
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+# ===========================
+# ALLOWED FILES (explicit whitelist)
+# ===========================
+
+# Keep placeholder files in empty directories
+!.gitkeep
+!.keep
+
+# Keep template config
+!config.template.yaml
+!config.yaml.template
+
+# ===========================
+# NOTES
+# ===========================
+
+# This .gitignore prevents:
+# 1. API credentials from being exposed
+# 2. Sensitive email data from being committed
+# 3. Personal information from leaking
+# 4. Development files from cluttering repo
+
+# Before pushing to GitHub:
+# 1. Review all files being committed
+# 2. Ensure config.yaml is NOT in the commit
+# 3. Verify no real credentials are in any file
+# 4. Run: git status to check what will be committed

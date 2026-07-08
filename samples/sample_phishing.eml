@@ -1,0 +1,38 @@
+Return-Path: <phisher@evil-domain.com>
+Delivered-To: victim@company.com
+Received: from mail.evil-domain.com (unknown [192.0.2.1])
+	by mail.company.com with ESMTP id ABC123
+	Thu, 17 Oct 2024 10:00:00 -0400
+From: "IT Security Team" <phisher@evil-domain.com>
+To: victim@company.com
+Subject: Urgent: Verify Your Account Immediately
+Date: Thu, 17 Oct 2024 10:00:00 -0400
+Message-ID: <abc123xyz@evil-domain.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+Dear Valued User,
+
+We have detected suspicious activity on your account. Your email account will be
+suspended in 24 hours unless you verify your identity immediately.
+
+Please click the link below to verify your account:
+
+https://secure-verification-portal.evil-domain.com/verify?token=xyz123abc
+
+Alternatively, you can visit our security portal directly:
+http://account-security-check.malicious-site.com/login
+
+If you do not complete this verification, your account will be permanently disabled.
+
+This is an automated security notification. Please do not reply to this email.
+For support, contact: support@evil-domain.com
+
+Thank you for your cooperation,
+IT Security Team
+Company Security Department
+
+--
+This email was sent to: victim@company.com
+If you believe this was sent in error, please ignore this message.

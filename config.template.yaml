@@ -1,0 +1,28 @@
+---
+# Email Analyzer Configuration Template
+# Copy this file to config.yaml and fill in your credentials
+
+general:
+  analyst_name: "Security Team"
+
+# Check Point Email Security API
+checkpoint:
+  enabled: true
+  base_url: "https://YOUR_CHECKPOINT_SERVER"
+
+  # Authentication Option 1: Username/Password (for Management API)
+  username: "YOUR_USERNAME"
+  password: "YOUR_PASSWORD"
+
+  # Authentication Option 2: API Key (recommended)
+  # api_key: "YOUR_API_KEY"
+
+  # Query settings
+  lookback_days: 14
+
+# Netskope URL Filtering
+netskope:
+  enabled: true
+  tenant: "YOUR_TENANT_NAME"  # Just the name, not full URL (e.g., "company" not "company.goskope.com")
+  api_token: "YOUR_NETSKOPE_API_TOKEN"
+  blocklist_name: "Phishing_URLs_Blocklist"  # Name of URL list to use/create

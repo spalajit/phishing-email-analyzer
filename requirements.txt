@@ -1,0 +1,12 @@
+# Email Analyzer - Python Dependencies
+
+# Core dependencies
+requests>=2.31.0
+pyyaml>=6.0
+
+# Email parsing
+# (Built-in: email, email.parser)
+
+# Optional: For parsing .msg files (Outlook format)
+# extract-msg>=0.41.0
+# olefile>=0.46
